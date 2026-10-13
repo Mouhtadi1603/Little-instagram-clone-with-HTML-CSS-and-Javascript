@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: SourceSansProReg;
+    src: url("fonts/SourceSansPro-Regular.ttf");
+   } 
+
+@font-face {
+    font-family: SourceSansProBold;
+    src: url("fonts/SourceSansPro-Bold.ttf");
+   } 
+
+.container{
+    background-color: #EDEDED;
+    width: 375px;
+    height: 1746px;
+    margin: 100px auto 50px auto;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+/* --------------- HEADER ------------------- */
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #EDEDED;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+}
+
+header #logo{
+    width: 112px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+header #profile, 
+section #avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+header #profile{
+    margin-right: 10px; 
+}
+
+/* ----------- POSTS --------------- */
+
+.section1, .section2{
+    width: inherit;
+    height: 435px;
+    margin-bottom: 25px;
+}
+
+.section2, .section3{
+    margin-top: 125px;
+}
+
+section{
+    width: 100%;
+}
+
+/* Post header */
+
+.post-header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.post-header #avatar, .post-header p{
+    margin-left: 10px;
+}
+
+.post-header p,
+.likes-cap p{
+    font-family: SourceSansProBold;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 13px;
+    color: black;
+}
+
+.post-header span{
+    
+    display: block;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    color: black;
+    
+}
+
+.post-header span,
+.likes-cap span {
+    font-family: SourceSansProReg; 
+}
+
+/* Post image */
+
+.post-image{
+    width: 100%;
+    height: 375px;
+    margin-bottom: 0px;
+}
+
+/* Likes and Caption */
+
+.likes-cap{
+    width: 100%;
+    height: 118px;
+    background-color: white;
+    margin-top: -19px;
+}
+
+.section3 .likes-cap{
+    height: 135px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.icons img{
+    width: 25px;
+    height: 25px;
+    margin: 30px 0px 12px 10px;
+}
+
+.likes-cap p{
+    font-size: 13px;
+}
+
+.likes-cap p{
+    margin: 0px 0px 8px 10px;
+}
+
+.likes-cap span
+    {
+    font-family: SourceSansProReg; 
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    color: black;
+
+}
+
+a{
+    text-decoration: none;
+}
